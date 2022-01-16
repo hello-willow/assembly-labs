@@ -1,3 +1,6 @@
+# Dev tools
+[._]*.sw[a-p]
+
 # Prerequisites
 *.d
 

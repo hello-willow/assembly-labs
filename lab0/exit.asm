@@ -1,7 +1,7 @@
 global _start
 
 section .data
-exit_code: db 0
+exit_code: db 13
 
 section .text
 _start:

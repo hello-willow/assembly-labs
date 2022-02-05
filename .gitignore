@@ -4,6 +4,9 @@
 # Prerequisites
 *.d
 
+# Build output
+bin/
+
 # Object files
 *.o
 *.ko

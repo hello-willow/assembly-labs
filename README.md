@@ -34,3 +34,18 @@ $ ./exit
 $ file exit
 exit: ELF 32-bit LSB executable, x86-64, version 1 (SYSV), statically linked, not stripped                                
 ```
+
+# Content
+
+All labs are located in `src/` for easier access in build scripts.
+
+| Lab      | Filename | Description |
+| ----------- | ----------- |
+| 0      | `exit.asm`       | Set return code to 13 |
+| 1   | TBD        | TBD |
+| 2   | TBD        | TBD |
+| 3   | TBD        | TBD |
+| 4   | TBD        | TBD |
+| 5   | TBD        | TBD |
+| 6   | TBD        | TBD |
+| 7   | TBD        | TBD |

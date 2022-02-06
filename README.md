@@ -1,7 +1,7 @@
 # assembly-labs
 x86 labs
 
-# Instructions
+# Usage
 Available `make` targets:
 ```
 $ make help

@@ -1,8 +1,18 @@
 # assembly-labs
 x86 labs
 
-# Instructions (WIP)
+# Instructions
+Available `make` targets:
+```bash
+$ make help
+build   Assemble & link selected file: make build file=<filename>
+dump    Display objdump for selected output file: make dump file=<filename>
+hw      Run analytics on output file for selected lab and save to homework/: make hw file=<filename> lab=<lab#>
+clean   Remove all build content
+help    List all available make targets
+```
 
+### FIXME
 These commands work on Ubuntu 20:
 ```bash
 $ uname -a
@@ -36,8 +46,8 @@ exit: ELF 32-bit LSB executable, x86-64, version 1 (SYSV), statically linked, no
 ```
 
 # Content
-
-All labs are located in `src/` for easier access in build scripts.
+All assembly files are located directly in `src/` for easier access in build scripts. All analytics
+output (`file`, `objdump`, `strace`, etc.) is located in `homework/`, split by respective lab.
 
 | Lab      | Filename | Description |
 | ----------- | ----------- | -----------  |

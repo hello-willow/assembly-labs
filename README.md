@@ -5,11 +5,34 @@ x86 labs
 Available `make` targets:
 ```bash
 $ make help
-build   Assemble & link selected file: make build file=<filename>
-dump    Display objdump for selected output file: make dump file=<filename>
-hw      Run analytics on output file for selected lab and save to homework/: make hw file=<filename> lab=<lab#>
+build   Build & link selected source file: make build file=<file.asm>
+dump    Display objdump for selected executable file: make dump file=<executable>
+hw      Run analytics & save to homework: make hw file=<executable> lab=<lab#>
 clean   Remove all build content
 help    List all available make targets
+```
+*Examples:*
+```bash
+$ make build file=exit.asm
+scripts/build.sh exit.asm
+Built executable bin/exit
+
+$ make dump file=exit
+scripts/dump.sh exit
+
+bin/exit:     file format elf32-x86-64
+
+
+Disassembly of section .text:
+
+00401000 <_start>:
+401000:       b0 01                   mov    al,0x1
+401002:       8b 1c 25 00 20 40 00    mov    ebx,DWORD PTR ds:0x402000
+401009:       cd 80                   int    0x80
+
+$ make hw file=exit lab=0
+scripts/homework.sh exit 0
+Created analytics files in homework/lab0 for bin/exit
 ```
 
 ### FIXME

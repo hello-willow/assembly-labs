@@ -12,3 +12,5 @@ file bin/${FILE} > homework/${LAB}/file.txt
 strace -o homework/${LAB}/strace.txt bin/${FILE} 
 hexdump bin/${FILE} > homework/${LAB}/hexdump.txt
 xxd bin/${FILE} > homework/${LAB}/xxd.txt
+
+echo "Created analytics files in homework/${LAB} for bin/${FILE}"

@@ -1,12 +1,12 @@
-.PHONY: build # Build & link selected file: make build file=<filename>
+.PHONY: build # Build & link selected source file: make build file=<file.asm>
 build:
 	scripts/build.sh $(file)
 
-.PHONY: dump # Display objdump for selected output file: make dump file=<filename>
+.PHONY: dump # Display objdump for selected executable file: make dump file=<executable>
 dump:
 	scripts/dump.sh $(file)
 
-.PHONY: hw # Run analytics on output file for selected lab and save to homework/: make hw file=<filename> lab=<lab#>
+.PHONY: hw # Run analytics & save to homework: make hw file=<executable> lab=<lab#>
 hw:
 	scripts/homework.sh $(file) $(lab)
 

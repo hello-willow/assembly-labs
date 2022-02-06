@@ -7,8 +7,8 @@ if [ ! -d "homework/${LAB}" ]; then
     mkdir homework/${LAB}
 fi
 
-objdump -d -M intel bin/${FILE} > homework/${LAB}/objdump.out
-file bin/${FILE} > homework/${LAB}/file.out
-strace -o homework/${LAB}/strace.out bin/${FILE} 
-hexdump bin/${FILE} > homework/${LAB}/hexdump.out
-xxd bin/${FILE} > homework/${LAB}/xxd.out
+objdump -d -M intel bin/${FILE} > homework/${LAB}/objdump.txt
+file bin/${FILE} > homework/${LAB}/file.txt
+strace -o homework/${LAB}/strace.txt bin/${FILE} 
+hexdump bin/${FILE} > homework/${LAB}/hexdump.txt
+xxd bin/${FILE} > homework/${LAB}/xxd.txt

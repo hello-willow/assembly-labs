@@ -3,7 +3,7 @@ x86 labs
 
 # Instructions
 Available `make` targets:
-```bash
+```
 $ make help
 build   Build & link selected source file: make build file=<file.asm>
 dump    Display objdump for selected executable file: make dump file=<executable>
@@ -12,7 +12,7 @@ clean   Remove all build content
 help    List all available make targets
 ```
 *Examples:*
-```bash
+```
 $ make build file=exit.asm
 scripts/build.sh exit.asm
 Built executable bin/exit
@@ -37,7 +37,7 @@ Created analytics files in homework/lab0 for bin/exit
 
 ### FIXME
 These commands work on Ubuntu 20:
-```bash
+```
 $ uname -a
 Linux ubuntu 5.11.0-46-generic #51~20.04.1-Ubuntu SMP Fri Jan 7 06:51:40 UTC 2022 x86_64 x86_64 x86_64 GNU/Linux
 $ nasm -f elfX32 exit.asm
@@ -48,7 +48,7 @@ $ echo $?
 ```
 
 But these commands work on Debian 11:
-```bash
+```
 $ uname -a
 Linux debian 5.10.0-10-amd64 #1 SMP Debian 5.10.84-1 (2021-12-08) x86_64 GNU/Linux   
 $ nasm -f elf64 exit.asm
@@ -59,7 +59,7 @@ $ echo $?
 
 
 Error when trying to run `elfX32` on Debian 11:
-```bash
+```
 $ nasm -f elfX32 exit.asm
 $ ld -m elf32_x86_64 exit.o -o exit
 $ ./exit

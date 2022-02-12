@@ -3,6 +3,11 @@
 FILE=$1
 FILENAME="${FILE%.*}"
 
+if [ ! -f src/${FILE} ]; then
+    echo "Cannot find assembly file src/${FILE}"
+    exit 2
+fi
+
 if [ ! -d "bin" ]; then
     mkdir bin
 fi

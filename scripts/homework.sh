@@ -3,6 +3,11 @@
 FILE=$1
 LAB="lab$2"
 
+if [ ! -f bin/${FILE} ]; then
+    echo "Cannot find executable file bin/${FILE}"
+    exit 2
+fi
+
 if [ ! -d "homework/${LAB}" ]; then
     mkdir homework/${LAB}
 fi

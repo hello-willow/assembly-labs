@@ -1,6 +1,6 @@
 # Registers & EFLAGS
 
-# Registers
+## Registers
 ### General Purpose
 16-bit, in order of a push-to-stack operation:
 | Register | Name | Description |
@@ -14,14 +14,10 @@
 | `SI` | **Source Index** | Source pointer for string operations, used as pointer to source in stream operations |
 | `DI` | **Destination Index** | Destination pointer for string operations, used as pointer to destination in stream operations |
 
-### Register Naming Conventions
-Accumulator register, for 8-, 16-, 32-, and 64-bit naming conventions:
-| Mode | Example |
-| -----------: | -----------: |
-| 8 | `AH`/`AL` |
-| 16 | `AX` |
-| 32 | `EAX`| 
-| 64 | `RAX`|
+### Naming Conventions
+Accumulator register in 8-, 16-, 32-, and 64-bit naming conventions:
+
+![Register Naming Conventions](x86_registers_modes.png)
 
 ### Other
 | Register | Name | Description |
@@ -29,12 +25,10 @@ Accumulator register, for 8-, 16-, 32-, and 64-bit naming conventions:
 | `EIP` | **Instruction Pointer** | Pointer for the next instruction to execute (if no branching), can only be read through stack after a `call` |
 
 ## EFLAGS
-| Register | Name | Description |
+| Flag | Name | Description |
 | ----------- | ----------- | :----------- |
 | `SF` | **Sign Flag** | Set to most significant bit of result, which is the sign bit for signed ints (0 = positive, 1 = negative) |
 | `ZF` | **Zero Flag** | Set if result of an operation is zero |
-
-
 
 
 ### Sources

@@ -1,7 +1,7 @@
 # assembly-labs
 x86 labs
 
-# Usage
+## Usage
 Available `make` targets:
 ```
 $ make help
@@ -11,7 +11,7 @@ hw      Run analytics & save to homework: make hw file=<executable> lab=<lab#>
 clean   Remove all build content
 help    List all available make targets
 ```
-*Examples:*
+Examples:
 ```
 $ make build file=exit.asm
 scripts/build.sh exit.asm
@@ -35,9 +35,9 @@ scripts/homework.sh exit 0
 Created analytics files in homework/lab0 for bin/exit
 ```
 
-# Content
-All assembly files are located directly in `src/` for easier access in build scripts. All analytics
-output (`file`, `objdump`, `strace`, etc.) is located in `homework/`, split by respective lab.
+## Content
+### Labs
+All assembly files are located in `src/`. Build utilities will produce executables in `bin/` (not tracked by `git`). 
 
 | Lab      | Filename | Description |
 | ----------- | ----------- | -----------  |
@@ -49,3 +49,11 @@ output (`file`, `objdump`, `strace`, etc.) is located in `homework/`, split by r
 | 5   | TBD        | TBD |
 | 6   | TBD        | TBD |
 | 7   | TBD        | TBD |
+
+All analytics output (`file`, `objdump`, `strace`, etc.) is located in `homework/`, split by respective lab.
+
+### Docs
+Charts and infographics are available for the following material:
+- Registers
+- Instructions
+- Data Types

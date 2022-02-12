@@ -1,28 +1,40 @@
+# Registers & EFLAGS
+
 # Registers
+### General Purpose
+16-bit, in order of a push-to-stack operation:
+| Register | Name | Description |
+| ----------- | ----------- | :----------- |
+| `AX` | **Accumulator** | Used in arithmetic operations, stores function return values |
+| `CX` | **Counter** | Used in shift/rotate instructions, loops, and string operations |
+| `DX` | **Data** | I/O pointer, used in arithemetic & I/O operations |
+| `BX` | **Base** | Base pointer for data section |
+| `SP` | **Stack Pointer** | Used to point to top of the stack |
+| `BP` | **Stack Base Pointer** | Used to point to base of the stack |
+| `SI` | **Source Index** | Source pointer for string operations, used as pointer to source in stream operations |
+| `DI` | **Destination Index** | Destination pointer for string operations, used as pointer to destination in stream operations |
 
-General-purpose registers naming convention (16-bit):
-
-FIXME: change to push-to-stack operation order
-| Name | Description |
-| ----------- | ----------- |
-| `AX` | TODO |
-| `BX` | TODO | 
-| `CX` | TODO |
-| `DX` | TODO |
-| `SP` | TODO |
-| `BP` | TODO |
-| `SI` | TODO |
-| `DI` | TODO |
-| `IP` | TODO |
-
-Register prefixes:
-
+### Register Naming Conventions
+Accumulator register, for 8-, 16-, 32-, and 64-bit naming conventions:
 | Mode | Example |
 | -----------: | -----------: |
 | 8 | `AH`/`AL` |
 | 16 | `AX` |
 | 32 | `EAX`| 
 | 64 | `RAX`|
+
+### Other
+| Register | Name | Description |
+| ----------- | ----------- | :----------- |
+| `EIP` | **Instruction Pointer** | Pointer for the next instruction to execute (if no branching), can only be read through stack after a `call` |
+
+## EFLAGS
+| Register | Name | Description |
+| ----------- | ----------- | :----------- |
+| `SF` | **Sign Flag** | Set to most significant bit of result, which is the sign bit for signed ints (0 = positive, 1 = negative) |
+| `ZF` | **Zero Flag** | Set if result of an operation is zero |
+
+
 
 
 ### Sources

@@ -17,7 +17,7 @@
 ### Naming Conventions
 Accumulator register in 8-, 16-, 32-, and 64-bit naming conventions:
 
-![Register Naming Conventions](x86_registers_modes.png)
+![Register Naming Conventions](media/x86_registers_modes.png)
 
 ### Other
 | Register | Name | Description |

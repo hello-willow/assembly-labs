@@ -41,7 +41,7 @@ All assembly files are located in `src/`. Build utilities will produce executabl
 
 | Lab      | Filename | Description |
 | ----------- | ----------- | -----------  |
-| 0      | `exit.asm`       | Set return code to 13 |
+| 0      | `exit.asm`       | Set exit code to 13 |
 | 1   | TBD        | TBD |
 | 2   | TBD        | TBD |
 | 3   | TBD        | TBD |

@@ -41,8 +41,8 @@ All assembly files are located in `src/`. Build utilities will produce executabl
 
 | Lab      | Filename | Description |
 | ----------- | ----------- | -----------  |
-| 0      | `exit.asm`       | Set exit code to 13 |
-| 1   | TBD        | TBD |
+| 0   | `exit.asm` | Set exit code (return value) to 13 |
+| 1   | `hello.asm` | Print `Hello, Clarice.` to console |
 | 2   | TBD        | TBD |
 | 3   | TBD        | TBD |
 | 4   | TBD        | TBD |
@@ -54,7 +54,8 @@ All analytics output (`file`, `objdump`, `strace`, etc.) is located in `homework
 
 ### Docs
 Charts & cheatsheets are available for the following material:
-- Registers
-- Instructions
-- Data Types
-- GDB
+- [Registers](docs/registers.md)
+- [Instructions](docs/instructions.md)
+- [Data Types](docs/data_types.md)
+- [GDB](docs/gdb.md)
+- [Reference](docs/reference.md)

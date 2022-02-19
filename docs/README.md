@@ -1,3 +1,3 @@
 # docs
 
-Here are some useful charts and infographics for x86.
+Here are some useful charts & cheatsheets for x86.

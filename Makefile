@@ -2,7 +2,7 @@
 build:
 	scripts/build.sh $(file)
 
-.PHONY: dump # Display objdump for selected executable file: make dump file=<executable>
+.PHONY: dump # Display objdump for selected executable: make dump file=<executable>
 dump:
 	scripts/dump.sh $(file)
 
@@ -10,8 +10,12 @@ dump:
 hw:
 	scripts/homework.sh $(file)
 
-.PHONY: clean # Remove all build content
+.PHONY: clean # Delete build content for selected file only: make clean file=<executable>
 clean:
+	scripts/clean.sh $(file)
+
+.PHONY: broom # Clean sweep & delete all build content
+broom:
 	rm -rf bin
 
 .PHONY: help # List all available make targets

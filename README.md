@@ -50,7 +50,7 @@ All assembly files are located in `src/`. Build utilities will produce executabl
 | 6   | TBD        | TBD |
 | 7   | TBD        | TBD |
 
-All analytics output (`file`, `objdump`, `strace`, etc.) is located in `homework/`, split by respective lab.
+All analytics output (`file`, `objdump`, `strace`, etc.) is located in `homework/`, split by respective filename.
 
 ### Docs
 Charts & cheatsheets are available for the following material:

@@ -6,9 +6,9 @@ build:
 dump:
 	scripts/dump.sh $(file)
 
-.PHONY: hw # Run analytics & save to homework: make hw file=<executable> lab=<lab#>
+.PHONY: hw # Run analytics & save to homework: make hw file=<executable>
 hw:
-	scripts/homework.sh $(file) $(lab)
+	scripts/homework.sh $(file)
 
 .PHONY: clean # Remove all build content
 clean:

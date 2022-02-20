@@ -6,9 +6,10 @@ Available `make` targets:
 ```
 $ make help
 build   Build & link selected source file: make build file=<file.asm>
-dump    Display objdump for selected executable file: make dump file=<executable>
-hw      Run analytics & save to homework: make hw file=<executable> lab=<lab#>
-clean   Remove all build content
+dump    Display objdump for selected executable: make dump file=<executable>
+hw      Run analytics & save to homework: make hw file=<executable>
+clean   Delete build content for selected file only: make clean file=<executable>
+broom   Clean sweep & delete all build content
 help    List all available make targets
 ```
 Examples:
@@ -30,9 +31,9 @@ Disassembly of section .text:
 401002:       8b 1c 25 00 20 40 00    mov    ebx,DWORD PTR ds:0x402000
 401009:       cd 80                   int    0x80
 
-$ make hw file=exit lab=0
-scripts/homework.sh exit 0
-Created analytics files in homework/lab0 for bin/exit
+$ make hw file=exit
+scripts/homework.sh exit
+Created analytics files in homework/exit/ for bin/exit
 ```
 
 ## Content

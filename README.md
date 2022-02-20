@@ -45,10 +45,10 @@ All assembly files are located in `src/`. Build utilities will produce executabl
 
 | Lab      | Filename | Description |
 | ----------- | ----------- | -----------  |
-| 0   | `exit.asm` | Set exit code (return value) to 13 |
+| 0   | `exit.asm` | Set return value to 13 |
 | 1   | `hello.asm` | Print `Hello, Clarice.` to console |
 | 2   | TBD        | TBD |
-| 3   | TBD        | TBD |
+| 3   | `call.asm` | Use `call` to run function that sets return value to 101 |
 | 4   | TBD        | TBD |
 | 5   | TBD        | TBD |
 | 6   | TBD        | TBD |

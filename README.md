@@ -17,7 +17,8 @@ Examples:
 $ make build file=exit.asm
 scripts/build.sh exit.asm
 Built executable bin/exit
-
+```
+```
 $ make dump file=exit
 scripts/dump.sh exit
 
@@ -30,7 +31,9 @@ Disassembly of section .text:
 401000:       b0 01                   mov    al,0x1
 401002:       8b 1c 25 00 20 40 00    mov    ebx,DWORD PTR ds:0x402000
 401009:       cd 80                   int    0x80
+```
 
+```
 $ make hw file=exit
 scripts/homework.sh exit
 Created analytics files in homework/exit/ for bin/exit

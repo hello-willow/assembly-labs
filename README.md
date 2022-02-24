@@ -41,7 +41,7 @@ Created analytics files in homework/exit/ for bin/exit
 
 ## Content
 ### Labs
-All assembly files are located in `src/`. Build utilities will produce executables in `bin/` (not tracked by `git`). 
+All assembly files are located in `src/`. Build utilities will produce executables in `bin/` (not tracked by `git`). All C code lives in `c-samples`.
 
 | Lab      | Filename | Description |
 | ----------- | ----------- | -----------  |

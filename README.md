@@ -47,12 +47,13 @@ All assembly files are located in `src/`. Build utilities will produce executabl
 | ----------- | ----------- | -----------  |
 | 0   | `exit.asm` | Set return value to 13 |
 | 1   | `hello.asm` | Print `Hello, Clarice.` to console |
-| 2   | TBD        | TBD |
-| 3   | `call.asm` | Use `call` to run function that sets return value to 101 |
-| 4   | TBD        | TBD |
-| 5   | TBD        | TBD |
-| 6   | TBD        | TBD |
-| 7   | TBD        | TBD |
+| 2   | `jump.asm`  | TODO: Use `JMP` to jump to exit syscall |
+| 3   | `call.asm` | Use `CALL` to run function that sets return value to 101 |
+| 4   | `goodbye.asm` | TODO: modify earlier labs to implement `goodbye.c` |
+| 5   | `while.asm` | TODO: implement `loop.c` using mix of `CALL` and `JMP` |
+| 6   | `dowhile.asm` | TODO: implement `dowhile.c` |
+| 7   | `for.asm` | TODO: implement `for.c` |
+| 99  | `bonus.asm` | TODO: choose your own adventure & instruction |
 
 All analytics output (`file`, `objdump`, `strace`, etc.) is located in `homework/`, split by respective filename.
 

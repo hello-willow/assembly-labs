@@ -8,6 +8,23 @@
 | `CALL` | **Call procedure** | Transfer control to different function by pushing address of next instruction onto stack and then changing `EIP` to the given address |
 | `RET` | **Return from procedure** | 2 forms: 1) `ret` alone to pop top off stack into `EIP`, 2) `ret 0x8`, `ret 0x20`, etc. to pop top off stack into `EIP` and add constant number of bytes to `ESP`  |
 | `MOV` | **Move data** | Copy data from one location to another: register > register, register > memory, memory > register, immediate > register, immediate > memory, but **NEVER** memory > memory |
+| `LEA` | **Does stuff** | stuff |
+| `ADD` | **Does stuff** | stuff |
+| `SUB` | **Does stuff** | stuff |
+| `JMP` | **Does stuff** | stuff |
+| `Jcc` | **Does stuff** | stuff |
+| `CMP` | **Does stuff** | stuff |
+| `TEST` | **Does stuff** | stuff |
+| `AND` | **Does stuff** | stuff |
+| `OR` | **Does stuff** | stuff |
+| `XOR` | **Does stuff** | stuff |
+| `NOT` | **Does stuff** | stuff |
+| `SHR` | **Does stuff** | stuff |
+| `SHL` | **Does stuff** | stuff |
+| `IMUL` | **Does stuff** | stuff |
+| `DIV` | **Does stuff** | stuff |
+| `LEAVE` | **Does stuff** | stuff |
+| `XCHG` | **Does stuff** | stuff |
 
 
 # Sources

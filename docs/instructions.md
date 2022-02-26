@@ -23,7 +23,7 @@
 | `SHL` | **Shift left** | stuff |
 | `IMUL` | **Signed multiply** | stuff |
 | `DIV` | **Unsigned Divide** | stuff |
-| `LEAVE` | **Jigh-level procedure exit** | Releases stack frame set up by an earlier ENTER instruction; copies frame pointer (in `EBP`) into stack pointer (`ESP`), releasing the stack space allocated to the stack frame |
+| `LEAVE` | **High-level procedure exit** | Releases stack frame set up by an earlier ENTER instruction; copies frame pointer (in `EBP`) into stack pointer (`ESP`), releasing the stack space allocated to the stack frame |
 | `XCHG` | **Exchange data** | stuff |
 
 

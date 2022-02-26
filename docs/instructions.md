@@ -28,4 +28,5 @@
 
 
 # Sources
-[x86 Integer Instructions](https://en.wikipedia.org/wiki/X86_instruction_listings#x86_integer_instructions)
+[x86 Integer Instructions](https://en.wikipedia.org/wiki/X86_instruction_listings#x86_integer_instructions) \
+[Mirror of: Into the Void: x86 Instruction Set Reference](https://c9x.me/x86/)

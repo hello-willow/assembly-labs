@@ -6,9 +6,9 @@ build:
 dump:
 	scripts/dump.sh $(file)
 
-.PHONY: hw # Run analytics & save to homework: make hw file=<executable>
-hw:
-	scripts/homework.sh $(file)
+.PHONY: info # Get file info & save to analysis dir: make info file=<executable>
+info:
+	scripts/info.sh $(file)
 
 .PHONY: clean # Delete build content for selected file only: make clean file=<executable>
 clean:
@@ -21,4 +21,3 @@ broom:
 .PHONY: help # List all available make targets
 help:
 	@grep '^.PHONY: .* #' Makefile | sed 's/\.PHONY: \(.*\) # \(.*\)/\1	\2/'
-

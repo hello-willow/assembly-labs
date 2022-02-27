@@ -4,8 +4,9 @@
 # Prerequisites
 *.d
 
-# Build output
+# Build & analysis output
 bin/
+analysis/
 
 # Object files
 *.o

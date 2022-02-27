@@ -7,17 +7,19 @@ Available `make` targets:
 $ make help
 build   Build & link selected source file: make build file=<file.asm>
 dump    Display objdump for selected executable: make dump file=<executable>
-hw      Run analytics & save to homework: make hw file=<executable>
+info    Get file info & save to analysis dir: make info file=<executable>
 clean   Delete build content for selected file only: make clean file=<executable>
 broom   Clean sweep & delete all build content
 help    List all available make targets
 ```
+
 Examples:
 ```
 $ make build file=exit.asm
 scripts/build.sh exit.asm
 Built executable bin/exit
 ```
+
 ```
 $ make dump file=exit
 scripts/dump.sh exit
@@ -34,14 +36,16 @@ Disassembly of section .text:
 ```
 
 ```
-$ make hw file=exit
-scripts/homework.sh exit
-Created analytics files in homework/exit/ for bin/exit
+$ make info file=exit
+scripts/info.sh exit
+Saved analysis output (objdump, file, strace, hexdump, xxd) in analysis/exit/ for bin/exit
 ```
 
 ## Content
 ### Labs
-All assembly files are located in `src/`. Build utilities will produce executables in `bin/` (not tracked by `git`). All C code lives in `c-samples`.
+All assembly files are located in `src/`. Build utilities will produce executables in `bin/`, and
+output of analysis tools will be saved in `analysis/`. (Neither of these output directories is tracked
+by `git`.) All C code lives in `c-examples`.
 
 | Lab      | Filename | Description |
 | ----------- | ----------- | -----------  |
@@ -54,8 +58,6 @@ All assembly files are located in `src/`. Build utilities will produce executabl
 | 6   | `dowhile.asm` | TODO: implement `dowhile.c` |
 | 7   | `for.asm` | TODO: implement `for.c` |
 | 99  | `bonus.asm` | TODO: choose your own adventure & instruction |
-
-All analytics output (`file`, `objdump`, `strace`, etc.) is located in `homework/`, split by respective filename.
 
 ### Docs
 Charts & cheatsheets are available for the following material:

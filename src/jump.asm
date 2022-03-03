@@ -6,14 +6,15 @@ section .data
     exit_code: db 13
 
 section .text
+exit:
+    mov al, 1               ; sys_exit
+    mov ebx, [exit_code]    ; retval 13
+    int 0x80
+
 _start:
     mov edx, len
     mov ecx, msg
-    mov ebx, 1      ; stdout
-    mov eax, 4      ; sys_write
+    mov ebx, 1              ; stdout
+    mov eax, 4              ; sys_write
     int 0x80
-
-    mov ebx, [exit_code]
-    mov eax, 1      ; sys_exit
-    jmp EAX
-    int 0x80
+    jmp exit

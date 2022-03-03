@@ -8,7 +8,7 @@ section .data
 section .text
 exit:
     mov al, 1               ; sys_exit
-    mov ebx, [exit_code]    ; retval 13
+    mov ebx, 0              ; retval success
     int 0x80
 
 _start:

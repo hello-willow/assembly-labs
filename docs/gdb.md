@@ -1,14 +1,14 @@
 # GDB Cheatsheet
 
 General set-up:
-| Command | Description | Example | Shorthand |
-| ----------- | ----------- | :----------- | ----------- |
-| `gdb` | Start GDB session | `gdb <executable>` ||
-| `list` | Display full source code | `list` | `l` |
-| `list N,M` | List source code from line `N` to line `M` | `list 5,10` | `l 5,10` |
-| `break N` | Set breakpoint at line `N` | `break 7` ||
-| `d N` | Delete breakpoint number `N` | `d 3` ||
-| `info b` | Show all breakpoints | `info b` ||
+| Command | Description | Shorthand |
+| ----------- | ----------- | ----------- |
+| `gdb` | Start GDB session ||
+| `list` | Display full source code | `l` |
+| `list N,M` | List source code from line `N` to line `M` | `l N,M` |
+| `break N` | Set breakpoint at line `N` ||
+| `d N` | Delete breakpoint number `N` ||
+| `info b` | Show all breakpoints ||
 
 
 Run & debug:

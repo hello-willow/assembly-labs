@@ -44,15 +44,16 @@ Saved analysis output (objdump, file, strace, hexdump, xxd) in analysis/exit/ fo
 ## Content
 ### Labs
 All assembly files are located in `src/`. Build utilities will produce executables in `bin/`, and
-output of analysis tools will be saved in `analysis/`. (Neither of these output directories is tracked
-by `git`.) All C code lives in `c-examples`.
+output of analysis tools is saved in `analysis/`. (Neither of these output directories is tracked
+by git.) All C code lives in `c-examples`.
 
 | Lab      | Filename | Description |
 | ----------- | ----------- | -----------  |
 | 0   | `exit.asm` | Set return value to 13 |
 | 1   | `hello.asm` | Print `Hello, Clarice.` to console |
-| 2   | `jump.asm`  | TODO: Use `JMP` to jump to exit syscall |
-| 3   | `call.asm` | Use `CALL` to run function that sets return value to 101 |
+| 2   | `jump.asm`  | Use `JMP` to jump to exit function for `sys_exit` |
+| 3.0   | `call.asm` | Use `CALL` to run function that sets return value to 101 |
+| 3.1   | `bye.asm` | Use `CALL` to run function `bye` that prints `Goodbye, Clarice.` to console |
 | 4   | `goodbye.asm` | TODO: modify earlier labs to implement `goodbye.c` |
 | 5   | `while.asm` | TODO: implement `loop.c` using mix of `CALL` and `JMP` |
 | 6   | `dowhile.asm` | TODO: implement `dowhile.c` |

@@ -8,6 +8,8 @@ $ make help
 build   Build & link selected source file: make build file=<file.asm>
 dump    Display objdump for selected executable: make dump file=<executable>
 info    Get file info & save to analysis dir: make info file=<executable>
+static  Build C executable, static linking: make file=<file.c>
+dynamic Build C executable, dynamic linking: make file=<file.c>
 clean   Delete build content for selected file only: make clean file=<executable>
 broom   Clean sweep & delete all build content
 help    List all available make targets

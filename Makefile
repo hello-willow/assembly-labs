@@ -1,3 +1,7 @@
+export BIN=bin
+export X86SRC=src
+export CSRC=c-examples
+
 .PHONY: build # Build & link selected source file: make build file=<file.asm>
 build:
 	scripts/build.sh $(file)
@@ -9,6 +13,14 @@ dump:
 .PHONY: info # Get file info & save to analysis dir: make info file=<executable>
 info:
 	scripts/info.sh $(file)
+
+.PHONY: static # Build C executable, static linking: make static file=<file.c>
+static:
+	scripts/gcc.sh $(file) $@
+
+.PHONY: dynamic # Build C executable, dynamic linking: make dynamic file=<file.c>
+dynamic:
+	scripts/gcc.sh $(file) $@
 
 .PHONY: clean # Delete build content for selected file only: make clean file=<executable>
 clean:

@@ -1,7 +1,11 @@
+#include <stdio.h>
+#include <stdlib.h>
+
 int main() {
     int loop_count = 5;
     int size_count = 12;
-    int size_goodbye = 15;
+    int size_hello = 15;
+    int size_goodbye = 17;
     char* hello = "Hello, Clarice.";
     char* goodbye = "Goodbye, Clarice.";
 

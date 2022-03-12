@@ -1,3 +1,6 @@
+#include <stdio.h>
+#include <stdlib.h>
+
 int main() {
     int loop_count = 5;
     int size_hello = 12;

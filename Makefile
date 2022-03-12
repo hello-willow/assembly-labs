@@ -1,6 +1,6 @@
 export BIN=bin
 export X86SRC=src
-export CSRC=c-examples
+export CSRC=c-src
 
 .PHONY: build # Build & link selected source file: make build file=<file.asm>
 build:

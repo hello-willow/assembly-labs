@@ -47,7 +47,7 @@ Saved analysis output (objdump, file, strace, hexdump, xxd) in analysis/exit/ fo
 ### Labs
 All assembly files are located in `src/`. Build utilities will produce executables in `bin/`, and
 output of analysis tools is saved in `analysis/`. (Neither of these output directories is tracked
-by git.) All C code lives in `c-examples`.
+by git.) All C code lives in `c-src/`.
 
 | Lab      | Filename | Description |
 | ----------- | ----------- | -----------  |

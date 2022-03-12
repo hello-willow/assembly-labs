@@ -4,8 +4,8 @@ FILE=$1
 FILENAME="${FILE%.*}"
 LINKER=$2
 
-if [ ! -f c-examples/${FILE} ]; then
-    echo "Cannot find C source file c-examples/${FILE}"
+if [ ! -f ${CSRC}/${FILE} ]; then
+    echo "Cannot find C source file ${CSRC}/${FILE}"
     exit 2
 fi
 

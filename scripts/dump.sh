@@ -2,9 +2,9 @@
 
 FILE=$1
 
-if [ ! -f bin/${FILE} ]; then
-    echo "Cannot find executable file bin/${FILE}"
+if [ ! -f ${BIN}/${FILE} ]; then
+    echo "Cannot find executable file ${BIN}/${FILE}"
     exit 2
 fi
 
-exec objdump -d -M intel bin/${FILE}
+exec objdump -d -M intel ${BIN}/${FILE}

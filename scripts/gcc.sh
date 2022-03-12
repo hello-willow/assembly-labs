@@ -20,4 +20,4 @@ else
     gcc ${CSRC}/${FILE} -o ${BIN}/${FILENAME}
 fi
 
-echo "Built executable bin/${FILENAME}"
+echo "Built executable ${BIN}/${FILENAME}"

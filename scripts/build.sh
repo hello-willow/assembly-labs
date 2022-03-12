@@ -4,15 +4,15 @@ FILE=$1
 FILENAME="${FILE%.*}"
 
 if [ ! -f src/${FILE} ]; then
-    echo "Cannot find assembly file src/${FILE}"
+    echo "Cannot find assembly file ${X86SRC}/${FILE}"
     exit 2
 fi
 
-if [ ! -d "bin" ]; then
-    mkdir bin
+if [ ! -d ${BIN} ]; then
+    mkdir ${BIN}
 fi
 
-nasm -f elf32 src/${FILE} -o bin/${FILENAME}.o
-ld -m elf_i386 bin/${FILENAME}.o -o bin/${FILENAME}
+nasm -f elf32 ${X86SRC}/${FILE} -o ${BIN}/${FILENAME}.o
+ld -m elf_i386 ${BIN}/${FILENAME}.o -o ${BIN}/${FILENAME}
 
-echo "Built executable bin/${FILENAME}"
+echo "Built executable ${BIN}/${FILENAME}"

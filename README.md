@@ -67,6 +67,6 @@ Charts & cheatsheets are available for the following material:
 - [Registers](docs/registers.md)
 - [Instructions](docs/instructions.md)
 - [Data Types](docs/data_types.md)
-- [System Call](docs/syscalls.md)
+- [System Calls](docs/syscalls.md)
 - [GDB](docs/gdb.md)
 - [Reference](docs/reference.md)

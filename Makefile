@@ -14,11 +14,11 @@ dump:
 info:
 	scripts/info.sh $(file)
 
-.PHONY: static # Build C executable, static linking: make file=<file.c>
+.PHONY: static # Build C executable, static linking: make static file=<file.c>
 static:
 	scripts/gcc.sh $(file) $@
 
-.PHONY: dynamic # Build C executable, dynamic linking: make file=<file.c>
+.PHONY: dynamic # Build C executable, dynamic linking: make dynamic file=<file.c>
 dynamic:
 	scripts/gcc.sh $(file) $@
 

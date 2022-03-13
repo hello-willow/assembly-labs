@@ -25,5 +25,5 @@
 
 # Sources
 [Linux System Call Table](https://faculty.nps.edu/cseagle/assembly/sys_call.html) \
-[List of Linux/i386 system calls](http://asm.sourceforge.net/syscall.html)
+[List of Linux/i386 system calls](http://asm.sourceforge.net/syscall.html) \
 [Linux man pages online](https://man7.org/linux/man-pages/index.html)

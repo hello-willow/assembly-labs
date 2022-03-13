@@ -8,7 +8,7 @@ if [ ! -f ${BIN}/${FILE} ]; then
 fi
 
 if [ ! -d "analysis/${FILE}" ]; then
-    mkdir analysis/${FILE}
+    mkdir -p analysis/${FILE}
 fi
 
 objdump -d -M intel ${BIN}/${FILE} > analysis/${FILE}/objdump.txt

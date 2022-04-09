@@ -3,12 +3,15 @@
 General set-up:
 | Command | Description | Shorthand |
 | ----------- | ----------- | ----------- |
-| `gdb` | Start GDB session ||
-| `list` | Display full source code | `l` |
-| `list N,M` | List source code from line `N` to line `M` | `l N,M` |
-| `break N` | Set breakpoint at line `N` ||
-| `d N` | Delete breakpoint number `N` ||
-| `info b` | Show all breakpoints ||
+| `gdb <executable>` | Start GDB session ||
+| `list` | Display full source code (if available) | `l` |
+| `list N,M` | List source code from line `N` to line `M` (if available) | `l N,M` |
+| `break N` | Set breakpoint at line `N` | `b N` |
+| `break <label>` | Set breakpoint at `label` | `b <label>` |
+| `delete N` | Delete breakpoint number `N` | `d N` |
+| `info break` | Show all breakpoints | `i b` |
+| `info registers` | Show value of all registers | `i r` |
+| `info registers eax` | Show value of `eax` only | `i r eax` |
 
 
 Run & debug:

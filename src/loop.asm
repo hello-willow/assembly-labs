@@ -1,3 +1,9 @@
+; Print "Hello" three times, and then print "Goodbye" once
+;
+; WIP: this solution produces the correct output, but it doesn't follow the
+; logic of cloop.c because the call to `goodbye` and exit process should be in
+; the main function, not the subroutine `loop`.
+
 global _start
 
 section .data
@@ -8,24 +14,32 @@ section .data
     ctr: db 3
 
 section .text
-loop:
-    ; move counter into eax
+_start:
+    ; initialize counter value
     mov eax, [ctr]
-    ; compare against 0
-    cmp eax, 0
-    ; jump to hello if greater than 0
-    jg hello
-    ; decrement ctr
-    sub eax, 1
-    ret
 
-hello:
+    ; pass execution to loop function
+    call loop
+
+loop:
+    ; if ctr == 0, jump to goodbye & exit
+    cmp eax, 0
+    je goodbye
+
+    ; if not, store value for later
+    push eax
+    
     ; print hello msg
     mov edx, hello_len
     mov ecx, hello_msg
     mov eax, 4          ; sys_write
     mov ebx, 1          ; stdout
     int 0x80
+     
+    ; restore ctr, decrement ctr, and repeat loop
+    pop eax
+    sub eax, 1
+    jmp loop
 
 goodbye:
     ; print goodbye msg
@@ -34,14 +48,7 @@ goodbye:
     mov eax, 4          ; sys_write
     mov ebx, 1          ; stdout
     int 0x80
-    ret
-
-exit:
+    ; exit
     mov eax, 1          ; sys_exit
-    mov ebx, 0         ; retval
+    mov ebx, 0          ; retval
     int 0x80
-
-_start:
-    call loop
-    call goodbye
-    jmp exit

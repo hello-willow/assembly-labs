@@ -57,7 +57,7 @@ by git.) All C code lives in `c-src/`.
 | 3.0   | `call.asm` | Use `CALL` to run function that sets return value to 101 |
 | 3.1   | `bye.asm` | Use `CALL` to run function `bye` that prints `Goodbye, Clarice.` to console |
 | 4   | `branch.asm` | Implement `goodbye.c`, and print `Goodbye, Clarice.` with hardcoded test val set to `1` |
-| 5   | `loop.asm` | TODO: implement `loop.c` using mix of `CALL` and `JMP` |
+| 5   | `loop.asm` | implement `loop.c` using mix of `CALL` and `JMP` |
 | 6   | `dowhile.asm` | TODO: implement `dowhile.c` |
 | 7   | `for.asm` | TODO: implement `for.c` |
 | 99  | `bonus.asm` | TODO: choose your own adventure & instruction |

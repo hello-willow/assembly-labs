@@ -11,6 +11,8 @@
 | `LEA` | **Load Effective Address** | Loads address of effective operand into register rather than acting upon that memory location; can be used to pass address of array element to subroutine |
 | `ADD` | **Add** | Add first operand (destination) and second operand (source), and store result in destination operand; `Destination = Destination + Source` |
 | `SUB` | **Subtract** | Subtract second operand (source) from first operand (destination), and store result in destination operand; `Destination = Destination - Source` |
+| `INC` | **Increment** | Add value of `1` to the operand and store result in the operand; does not affect `CF` flag; destination can be register or memory location |
+| `DEC` | **Decrement** | Subtract value of `1` from the operand and store result in the operand; does not affect `CF` flag; destination can be register or memory location |
 | `JMP` | **Jump** | Jump to label for next line of execution |
 | `Jcc` | **Jump if condition** | Conditional jump (see options below) |
 | `CMP` | **Compare operands** | Compare first operand (destination) with second operand (source) |

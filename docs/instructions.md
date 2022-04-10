@@ -14,8 +14,8 @@
 | `JMP` | **Jump** | Jump to label for next line of execution |
 | `Jcc` | **Jump if condition** | Conditional jump (see options below) |
 | `CMP` | **Compare operands** | Compare first operand (destination) with second operand (source) |
-| `TEST` | **Logical compare** | stuff |
-| `AND` | **Logical `AND`** | stuff |
+| `TEST` | **Logical compare** | Performs bitwise `AND` on two operands and then modifies flags `SF`, `ZF`, `PF` and discards result of `AND`; sets `OF` and `CF` flags to 0, and leaves `AF` flag as undefined; can compare 8/16/32/64-bit values, registers, immediate values, and register indirect values |
+| `AND` | **Logical `AND`** | Performs bitwise `AND` on first operand (destination) and second operand (source), and then stores result in the destination operand location; source operand can be an immediate, a register, or a memory location; destination operand can be a register or a memory location, but two memory operands cannot be used in one instruction |
 | `OR` | **Logical `OR`** | stuff |
 | `XOR` | **Logical `XOR`** | stuff |
 | `NOT` | **Logical `NOT`** | stuff |

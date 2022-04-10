@@ -15,25 +15,36 @@ section .data
 
 section .text
 _start:
+    ; initialize counter
+    mov eax, [ctr]
+
+    ; subroutines
     call loop
     call bye
+
+    ; goto exit procedure
     jmp exit
 
 loop:
+    ; print hello message
     mov edx, h_len
     mov ecx, h_msg
     mov eax, 4          ; sys_write
     mov ebx, 1          ; stdout
     int 0x80
+    ret
 
 bye:
+    ; print goodbye message
     mov edx, g_len
     mov ecx, g_msg
     mov eax, 4          ; sys_write
     mov ebx, 1          ; stdout
     int 0x80
+    ret
 
 exit:
+    ; successful exit
     mov eax, 1          ; sys_exit
     mov ebx, 0          ; retval success
     int 0x80

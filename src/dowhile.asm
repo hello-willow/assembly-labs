@@ -26,12 +26,24 @@ _start:
     jmp exit
 
 loop:
+    ; save eax (ctr) for after hello message
+    push eax
+
     ; print hello message
     mov edx, h_len
     mov ecx, h_msg
     mov eax, 4          ; sys_write
     mov ebx, 1          ; stdout
     int 0x80
+
+    ; pull back ctr, increment, and compare with max
+    pop eax
+    inc eax
+    cmp eax, [max]
+    ; jump back to start of loop if ctr < max
+    jl loop
+    
+    ; fall-through return to main
     ret
 
 bye:
